@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <!-- flow -->
+    <RelativeLayout
+        android:id="@+id/flowLayout"
+        style="@style/LayoutBg">
+
+        <TextView
+            style="@style/TopText"
+            android:text="@string/flowText" />
+
+        <ImageView
+            style="@style/ImageIcon"
+            android:src="@drawable/flow_pic" />
+
+
+        <LinearLayout
+            style="@style/FirstLayout"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="22px"
+                android:layout_height="18px"
+                android:src="@drawable/home_icon_nav_distance"
+                android:visibility="gone" />
+
+            <TextView
+                style="@style/SecondText"
+                android:text="@string/duration" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/flowToggleLayout"
+            style="@style/SecondLayout">
+
+            <ToggleButton
+                android:id="@+id/flowToggle"
+                android:layout_width="42px"
+                android:layout_height="22px"
+                android:background="@drawable/btbotticon"
+                android:clickable="false"
+                android:focusable="false"
+                android:textOff=""
+                android:textOn="" />
+
+            <TextView
+                android:id="@+id/flowToggleText"
+                style="@style/ThirdText"
+                android:text="@string/noOpen" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <!-- volte -->
+    <RelativeLayout
+        android:id="@+id/volteLayout"
+        style="@style/LayoutBg">
+
+        <TextView
+            style="@style/TopText"
+            android:text="@string/volteText" />
+
+        <ImageView
+            style="@style/ImageIcon"
+            android:src="@drawable/pic_voltecall" />
+
+        <LinearLayout
+            style="@style/FirstLayout"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="22px"
+                android:layout_height="18px"
+                android:src="@drawable/home_icon_nav_distance" />
+
+            <TextView
+                android:id="@+id/remainingDistance"
+                style="@style/SecondText"
+                android:text="@string/textNull" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/SecondLayout"
+            android:visibility="gone">
+
+            <ToggleButton
+                android:id="@+id/volteBottToggle"
+                android:layout_width="42px"
+                android:layout_height="22px"
+                android:background="@drawable/btbotticon"
+                android:focusable="false"
+                android:textOff=""
+                android:textOn="" />
+
+            <TextView
+                android:id="@+id/volteBootText"
+                style="@style/ThirdText"
+                android:text="@string/noOpen" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <!-- Gallery -->
+    <RelativeLayout
+        android:id="@+id/galleryLayout"
+        style="@style/LayoutBg"
+        z>
+
+        <TextView
+            style="@style/TopText"
+            android:text="@string/gralleryText" />
+
+        <ImageView
+            style="@style/ImageIcon"
+            android:src="@drawable/gallery_pic" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/bottom1LayoutMarginBot"
+            android:drawableLeft="@drawable/gallery_icon_video"
+            android:drawablePadding="@dimen/marging10"
+            android:gravity="center_vertical"
+            android:text="@string/videoBott"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/textView2TextSize" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/bottom2LayoutMarginBot"
+            android:drawableLeft="@drawable/gallery_icon_photo"
+            android:drawablePadding="@dimen/marging10"
+            android:gravity="center_vertical"
+            android:text="@string/photoBott"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/textView3TextSize" />
+
+    </RelativeLayout>
+
+    <!-- edog -->
+    <RelativeLayout
+        android:id="@+id/edogLayout"
+        style="@style/LayoutBg"
+        android:layout_marginLeft="0dp">
+
+        <TextView
+            style="@style/TopText"
+            android:text="@string/edogText" />
+
+        <ImageView
+            style="@style/ImageIcon"
+            android:src="@drawable/pic_edog" />
+
+
+        <LinearLayout
+            style="@style/FirstLayout"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="22px"
+                android:layout_height="18px"
+                android:src="@drawable/home_icon_nav_distance"
+                android:visibility="gone" />
+
+            <TextView
+                style="@style/SecondText"
+                android:text="@string/duration" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/SecondLayout"
+            android:visibility="gone">
+
+            <ToggleButton
+                android:layout_width="42px"
+                android:layout_height="22px"
+                android:background="@drawable/btbotticon"
+                android:focusable="false"
+                android:textOff=""
+                android:textOn="" />
+
+            <TextView
+                style="@style/ThirdText"
+                android:text="@string/noOpen" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <!-- More -->
+    <RelativeLayout
+        android:id="@+id/moreLayout"
+        style="@style/LayoutBg"
+        android:layout_marginRight="@dimen/marging20">
+
+        <TextView
+            style="@style/TopText"
+            android:text="@string/moreText" />
+
+        <ImageView
+            style="@style/ImageIcon"
+            android:src="@drawable/more_pic" />
+
+        <LinearLayout
+            style="@style/FirstLayout"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="22px"
+                android:layout_height="18px"
+                android:src="@drawable/home_icon_nav_distance" />
+
+            <TextView
+                style="@style/SecondText"
+                android:text="@string/textNull" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/SecondLayout"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="48px"
+                android:layout_height="22px"
+                android:src="@drawable/home_btn_switch_on" />
+
+            <TextView
+                style="@style/ThirdText"
+                android:text="@string/open" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

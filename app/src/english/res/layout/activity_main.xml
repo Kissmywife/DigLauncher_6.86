@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPagerMain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:id="@+id/navigationPoint"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/topbarImageHeight"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/marging10"
+        android:gravity="center"
+        android:visibility="gone"
+        android:orientation="horizontal" />
+
+
+</RelativeLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <array name="weatherData">
+        <item>阴</item>
+        <item>雾</item>
+        <item>暴雨</item>
+        <item>雨</item>
+        <item>小雨</item>
+        <item>中雨</item>
+        <item>大雨</item>
+        <item>雪</item>
+        <item>小雪</item>
+        <item>中雪</item>
+        <item>大雪</item>
+        <item>雷阵雨</item>
+        <item>晴</item>
+        <item>多云</item>
+    </array>
+
+
+</resources>

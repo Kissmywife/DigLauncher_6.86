@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <!-- btphone -->
+    <RelativeLayout
+        android:id="@+id/btLayout"
+        style="@style/LayoutBg">
+
+        <TextView
+            style="@style/TopText"
+            android:text="@string/btText" />
+
+        <ImageView
+            style="@style/ImageIcon"
+            android:src="@drawable/bluetooth_pic" />
+
+        <LinearLayout style="@style/FirstLayout">
+
+            <ImageView
+                android:id="@+id/btConnectIcon"
+                android:layout_width="22px"
+                android:layout_height="18px"
+                android:src="@drawable/bluetooth_icon_unconnected" />
+
+            <TextView
+                android:id="@+id/btConnectText"
+                style="@style/SecondText"
+                android:text="@string/textNull" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/btBottLayout"
+            style="@style/SecondLayout">
+
+            <ToggleButton
+                android:id="@+id/btBottToggle"
+                android:layout_width="42px"
+                android:layout_height="22px"
+                android:background="@drawable/btbotticon"
+                android:clickable="false"
+                android:focusable="false"
+                android:textOff=""
+                android:textOn="" />
+
+            <TextView
+                android:id="@+id/btBootText"
+                style="@style/ThirdText"
+                android:text="@string/noOpen" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <!-- fm -->
+    <RelativeLayout
+        android:id="@+id/fmLayout"
+        style="@style/LayoutBg">
+
+        <TextView
+            style="@style/TopText"
+            android:text="@string/fmText" />
+
+        <ImageView
+            style="@style/ImageIcon"
+            android:src="@drawable/pic_fm" />
+
+        <LinearLayout style="@style/FirstLayout">
+
+            <ImageView
+                android:layout_width="22px"
+                android:layout_height="18px"
+                android:src="@drawable/home_icon_nav_distance"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/fmSize"
+                style="@style/SecondText"
+                android:text="@string/textNull" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/SecondLayout">
+
+            <ImageView
+                android:layout_width="136px"
+                android:layout_height="22px"
+                android:scaleType="fitCenter"
+                android:src="@drawable/fm_slider" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <!-- set -->
+    <RelativeLayout
+        android:id="@+id/setLayout"
+        style="@style/LayoutBg"
+        android:layout_marginRight="@dimen/marging20">
+
+        <TextView
+            style="@style/TopText"
+            android:text="@string/setText" />
+
+        <ImageView
+            style="@style/ImageIcon"
+            android:src="@drawable/set_pic" />
+
+        <LinearLayout
+            android:id="@+id/lightLayout"
+            style="@style/FirstLayout"
+            android:layout_height="@dimen/marging60"
+            android:layout_marginLeft="@dimen/marging10"
+            android:layout_marginRight="@dimen/marging10"
+            android:layout_marginBottom="50px">
+
+            <TextView
+                style="@style/SwitchText"
+                android:text="-" />
+
+            <com.digissin.launcher.view.MySeekBar
+                android:id="@+id/lightSeekBar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="@dimen/seekBarWidth"
+                android:layout_height="36px"
+                android:maxHeight="3px"
+                android:progressDrawable="@drawable/seekbar_bg"
+                android:thumb="@drawable/set_icon_brightness" />
+
+            <TextView
+                style="@style/SwitchText"
+                android:text="+" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/soundLayout"
+            style="@style/SecondLayout"
+            android:layout_height="@dimen/marging60"
+            android:layout_marginBottom="0px"
+            android:layout_marginLeft="@dimen/marging10"
+            android:layout_marginRight="@dimen/marging10">
+
+            <TextView
+                style="@style/SwitchText"
+
+                android:text="-" />
+
+            <com.digissin.launcher.view.MySeekBar
+                android:id="@+id/soundSeekBar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="@dimen/seekBarWidth"
+                android:layout_height="28px"
+                android:max="15"
+                android:maxHeight="3px"
+                android:progress="8"
+                android:progressDrawable="@drawable/seekbar_bg"
+                android:thumb="@drawable/set_icon_volume" />
+
+            <TextView
+                style="@style/SwitchText"
+
+                android:text="+" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <!-- Wechat -->
+    <RelativeLayout
+        android:id="@+id/wechatLayout"
+        style="@style/LayoutBg"
+        android:layout_marginLeft="0dp">
+
+        <TextView
+            style="@style/TopText"
+            android:text="@string/wechatText" />
+
+        <ImageView
+            style="@style/ImageIcon"
+            android:src="@drawable/pic_wechat" />
+
+        <LinearLayout
+            style="@style/FirstLayout"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="22px"
+                android:layout_height="18px"
+                android:src="@drawable/home_icon_nav_distance"
+                android:visibility="gone" />
+
+            <TextView
+                style="@style/SecondText"
+                android:text="@string/textNull" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/SecondLayout">
+
+            <ToggleButton
+                android:layout_width="42px"
+                android:layout_height="22px"
+                android:background="@drawable/btbotticon"
+                android:focusable="false"
+                android:textOff=""
+                android:textOn=""
+                android:visibility="gone" />
+
+            <TextView
+                style="@style/ThirdText"
+                android:text="@string/noOpen"
+                android:visibility="gone" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <!-- QQ -->
+    <RelativeLayout
+        android:id="@+id/qqLayout"
+        style="@style/LayoutBg"
+        android:layout_marginRight="@dimen/marging20">
+
+        <TextView
+            style="@style/TopText"
+            android:text="@string/qqText" />
+
+        <ImageView
+            style="@style/ImageIcon"
+            android:src="@drawable/pic_qq" />
+
+        <LinearLayout
+            style="@style/FirstLayout"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="22px"
+                android:layout_height="18px"
+                android:src="@drawable/home_icon_nav_distance" />
+
+            <TextView
+                style="@style/SecondText"
+                android:text="@string/textNull" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/SecondLayout"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="48px"
+                android:layout_height="22px"
+                android:src="@drawable/home_btn_switch_on" />
+
+            <TextView
+                style="@style/ThirdText"
+                android:text="@string/open" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

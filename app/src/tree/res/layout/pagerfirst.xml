@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <!-- navi -->
+    <RelativeLayout
+        android:id="@+id/naviLayout"
+        style="@style/LayoutBg">
+
+        <TextView
+            style="@style/TopText"
+            android:text="@string/naviText" />
+
+        <ImageView
+            style="@style/ImageIcon"
+            android:src="@drawable/pic_nav" />
+
+        <LinearLayout style="@style/FirstLayout">
+
+            <ImageView
+                android:layout_width="22px"
+                android:layout_height="18px"
+                android:src="@drawable/home_icon_nav_distance" />
+
+            <TextView
+                android:id="@+id/remainingDistance"
+                style="@style/SecondText"
+                android:text="@string/textNull" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/SecondLayout">
+
+            <ImageView
+                android:layout_width="20px"
+                android:layout_height="28px"
+                android:src="@drawable/home_icon_nav_location" />
+
+            <TextView
+                android:id="@+id/currentLocation"
+                style="@style/ThirdText"
+                android:text="@string/textNull" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <!-- driv -->
+    <RelativeLayout
+        android:id="@+id/drivLayout"
+        style="@style/LayoutBg">
+
+        <TextView
+            style="@style/TopText"
+            android:text="@string/drivText" />
+
+        <ImageView
+            style="@style/ImageIcon"
+            android:src="@drawable/pic_record" />
+
+
+        <LinearLayout style="@style/FirstLayout">
+
+            <ImageView
+                android:layout_width="22px"
+                android:layout_height="18px"
+                android:src="@drawable/home_icon_nav_distance"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/recordMarket"
+                style="@style/SecondText"
+                android:text="@string/duration" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/SecondLayout">
+
+            <ImageView
+                android:id="@+id/drivStartImage"
+                android:layout_width="24px"
+                android:visibility="gone"
+                android:layout_height="24px"
+                android:src="@drawable/home_icon_record_recording" />
+
+            <TextView
+                android:id="@+id/drivStartText"
+                style="@style/ThirdText"
+                android:text="@string/norecording" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <!-- music -->
+    <RelativeLayout
+        android:id="@+id/musicLayout"
+        style="@style/LayoutBg"
+        android:layout_marginRight="@dimen/marging20">
+
+        <TextView
+            style="@style/TopText"
+            android:text="@string/musicText" />
+
+        <ImageView
+            style="@style/ImageIcon"
+            android:src="@drawable/pic_music" />
+
+        <LinearLayout
+            style="@style/FirstLayout"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="22px"
+                android:layout_height="18px"
+                android:src="@drawable/home_icon_nav_distance"
+                android:visibility="gone" />
+
+            <TextView
+                style="@style/SecondText"
+                android:text="@string/textNull" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/SecondLayout"
+            android:layout_width="match_parent">
+
+            <ImageView
+                android:id="@+id/musicPre"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/marging25"
+                android:layout_weight="1"
+                android:paddingLeft="@dimen/marging20"
+                android:scaleType="fitCenter"
+                android:src="@drawable/home_music_btn_last" />
+
+            <ImageView
+                android:id="@+id/musicPlayPause"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/marging25"
+                android:layout_weight="1"
+                android:scaleType="fitCenter"
+                android:src="@drawable/home_music_btn_play" />
+
+            <ImageView
+                android:id="@+id/musicNext"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/marging25"
+                android:layout_weight="1"
+                android:paddingRight="@dimen/marging20"
+                android:scaleType="fitCenter"
+                android:src="@drawable/home_music_btn_next" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <!-- ETC -->
+    <RelativeLayout
+        android:id="@+id/etcLayout"
+        style="@style/LayoutBg"
+        android:layout_marginLeft="0dp">
+
+        <TextView
+            style="@style/TopText"
+            android:text="@string/etcText" />
+
+        <ImageView
+            style="@style/ImageIcon"
+            android:src="@drawable/pic_etc" />
+
+        <TextView
+            android:id="@+id/etcLessMoney"
+            style="@style/SecondText"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/bottom1LayoutMarginBot"
+            android:text="000.00" />
+
+        <LinearLayout style="@style/SecondLayout">
+
+            <ImageView
+                android:layout_width="24px"
+                android:layout_height="24px"
+                android:src="@drawable/home_icon_etc_money" />
+
+            <TextView
+                style="@style/ThirdText"
+                android:text="@string/balanceText" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <!-- picture -->
+    <RelativeLayout
+        android:id="@+id/picLayout"
+        style="@style/LayoutBg"
+        android:layout_marginRight="@dimen/marging20">
+
+        <TextView
+            style="@style/TopText"
+            android:text="@string/texttakePhoto" />
+
+        <ImageView
+            style="@style/ImageIcon"
+            android:src="@drawable/pic_capture" />
+
+        <LinearLayout
+            style="@style/FirstLayout"
+            android:visibility="invisible">
+
+            <ImageView
+                android:layout_width="22px"
+                android:layout_height="18px"
+                android:src="@drawable/home_icon_nav_distance" />
+
+            <TextView
+                style="@style/SecondText"
+                android:text="@string/textNull" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/photoBottLayout"
+            style="@style/SecondLayout">
+
+            <ToggleButton
+                android:id="@+id/photoBottToggle"
+                android:layout_width="42px"
+                android:layout_height="22px"
+                android:clickable="false"
+                android:background="@drawable/btbotticon"
+                android:focusable="false"
+                android:textOff=""
+                android:textOn="" />
+
+            <TextView
+                android:id="@+id/photoBottText"
+                style="@style/ThirdText"
+                android:text="@string/open" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

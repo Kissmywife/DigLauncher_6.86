@@ -1,0 +1,38 @@
+<resources>
+
+    <dimen name="textSizeTopbar">28px</dimen>
+    <dimen name="navigationPointHeight">40px</dimen>
+    <dimen name="topbarMarging10">10px</dimen>
+    <dimen name="topbarImageWidth">26px</dimen>
+    <dimen name="topbarImageHeight">22px</dimen>
+    <dimen name="topbarImageHight10">10px</dimen>
+    <dimen name="topbarImageWidth56">56px</dimen>
+    <dimen name="marging10">10px</dimen>
+    <dimen name="marging40">40px</dimen>
+    <dimen name="marging60">60px</dimen>
+    <dimen name="textWeekDataSize">24px</dimen>
+    <dimen name="radius">20px</dimen>
+    <dimen name="pointHeightWidth">12px</dimen>
+    <dimen name="viewpageHight">380px</dimen>
+    <!-- top is public-->
+    <dimen name="marging20">20px</dimen>
+    <dimen name="textView1MarginTop">38px</dimen>
+    <dimen name="textView1SizeTop">34px</dimen>
+    <dimen name="marging25">25px</dimen>
+
+    <dimen name="imageViewWidthHeight">160px</dimen>
+    <dimen name="imageViewMarginTop">104px</dimen>
+
+    <dimen name="bottom1LayoutMarginBot">72px</dimen>
+    <dimen name="textView2MarginLeft">14px</dimen>
+    <dimen name="textView2TextSize">20px</dimen>
+
+    <dimen name="bottom2LayoutMarginBot">32px</dimen>
+    <dimen name="textView3TextSize">22px</dimen>
+
+    <dimen name="seekBarWidth">150px</dimen>
+    <dimen name="seekBarHeight">8px</dimen>
+
+    <dimen name="switchHeightWidth">24px</dimen>
+    <dimen name="switchTextSize">24px</dimen>
+</resources>

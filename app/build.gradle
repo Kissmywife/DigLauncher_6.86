@@ -1,0 +1,62 @@
+apply plugin: 'com.android.application'
+
+android {
+    signingConfigs {
+    }
+    compileSdkVersion 26
+    defaultConfig {
+        applicationId "com.digissin.launcher"
+        minSdkVersion 19
+        targetSdkVersion 26
+        versionCode 180223
+        versionName "v1.1.4"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        ndk {
+            // 设置支持的SO库架构
+            abiFilters 'armeabi' //, 'x86', 'armeabi-v7a', 'x86_64', 'arm64-v8a'
+        }
+    }
+    flavorDimensions "app"
+    productFlavors {
+        tree {
+            dimension "app"
+            versionCode 180115
+            versionName "v2.1.1"
+        }
+        english {
+            dimension "app"
+            versionCode 180109
+            versionName "v1.1.0"
+        }
+    }
+    sourceSets {
+        tree {
+            java.srcDir('src/tree/java')
+            res.srcDir('src/tree/res')
+        }
+        english {
+            java.srcDir('src/english/java')
+            res.srcDir('src/english/res')
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+dependencies {
+
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support:appcompat-v7:26.1.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.1'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+    compile 'uk.co.chrisjenx:calligraphy:2.3.0'
+    compile 'com.tencent.bugly:crashreport:latest.release'
+    compile 'com.tencent.bugly:nativecrashreport:latest.release'
+
+}

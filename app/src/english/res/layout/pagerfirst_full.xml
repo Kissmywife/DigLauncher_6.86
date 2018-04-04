@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_full"
+    android:orientation="vertical">
+
+
+    <LinearLayout style="@style/MainLayout">
+
+        <LinearLayout
+            android:id="@+id/navill"
+            style="@style/SecondLayout">
+
+            <ImageView
+                style="@style/IconImage"
+                android:src="@drawable/icon_nav" />
+
+            <TextView
+                style="@style/IconText"
+                android:text="@string/naviText" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/musicll"
+            style="@style/SecondLayout">
+
+            <ImageView
+                style="@style/IconImage"
+                android:src="@drawable/icon_music" />
+
+            <TextView
+                style="@style/IconText"
+                android:text="@string/musicText" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/recordll"
+            style="@style/SecondLayout">
+
+            <ImageView
+                style="@style/IconImage"
+                android:src="@drawable/icon_record" />
+
+            <TextView
+                style="@style/IconText"
+                android:text="@string/drivText" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/btll"
+            style="@style/SecondLayout">
+
+            <ImageView
+                style="@style/IconImage"
+                android:src="@drawable/icon_bluetooth" />
+
+            <TextView
+                style="@style/IconText"
+                android:text="@string/btText" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/MainLayout"
+        android:layout_marginTop="0dp">
+
+        <LinearLayout
+            android:id="@+id/flowll"
+            style="@style/SecondLayout">
+
+            <ImageView
+                style="@style/IconImage"
+                android:src="@drawable/icon_flow" />
+
+            <TextView
+                style="@style/IconText"
+                android:text="@string/flowText" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/fmll"
+            style="@style/SecondLayout">
+
+            <ImageView
+                style="@style/IconImage"
+                android:src="@drawable/icon_fm" />
+
+            <TextView
+                style="@style/IconText"
+                android:text="@string/fmText" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/filell"
+            style="@style/SecondLayout">
+
+            <ImageView
+                style="@style/IconImage"
+                android:src="@drawable/icon_file" />
+
+            <TextView
+                style="@style/IconText"
+                android:text="@string/fileText" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/setll"
+            style="@style/SecondLayout">
+
+            <ImageView
+                style="@style/IconImage"
+                android:src="@drawable/icon_set" />
+
+            <TextView
+                style="@style/IconText"
+                android:text="@string/setText" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

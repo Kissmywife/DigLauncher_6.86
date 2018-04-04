@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Launcher</string>
+    <string name="sosText">SOS</string>
+    <string name="volteText">Volte</string>
+    <string name="qqText">QQ</string>
+    <string name="flowText">Flow</string>
+    <string name="wechatText">Wechat</string>
+    <string name="photoText">Take photo</string>
+    <string name="naviText">Navigation</string>
+    <string name="etcText">ETC</string>
+    <string name="balanceText">Balance</string>
+    <string name="btText">Bluetooth</string>
+    <string name="kaolaText">Kao La</string>
+    <string name="drivText">Record</string>
+    <string name="musicText">Music</string>
+    <string name="fmText">FM</string>
+    <string name="fileText">File</string>
+    <string name="setText">Setting</string>
+    <string name="tencentText">Tencent</string>
+    <string name="edogText">"E-Dog"</string>
+    <string name="gralleryText">Picture</string>
+    <string name="moreText">More APP</string>
+    <string name="textNull">"- - -"</string>
+    <string name="textTime">"--:--"</string>
+    <string name="text_fm">FM</string>
+    <string name="androidSetting">Android Setting</string>
+    <string name="operatorType4G">4G</string>
+    <string name="operatorType3G">3G</string>
+    <string name="operatorType2G">2G</string>
+    <string name="refushWeatherData">"Refushing Weather,Please wait a moment"</string>
+    <string name="no_app">No APP</string>
+    <string name="norecording">no recording</string>
+    <string name="recording">recording</string>
+    <string name="duration">"00:00:00"</string>
+    <string name="balance">Balance</string>
+    <string name="texttakePhoto">Take Photo</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="noOpen">Not open</string>
+    <string name="opened">Opened</string>
+    <string name="closed">Closed</string>
+    <string name="noConnected">Not connect</string>
+    <string name="connected">Connected</string>
+    <string name="videoBott">Video</string>
+    <string name="photoBott">Photo</string>
+
+</resources>

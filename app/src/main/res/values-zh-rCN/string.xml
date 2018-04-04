@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Launcher</string>
+    <string name="volteText">Volte</string>
+    <string name="qqText">QQ物联</string>
+    <string name="flowText">流量监控</string>
+    <string name="sosText">一键报警</string>
+    <string name="wechatText">微信助手</string>
+    <string name="photoText">拍照</string>
+    <string name="naviText">导航</string>
+    <string name="etcText">ETC</string>
+    <string name="balanceText">余额</string>
+    <string name="btText">蓝牙</string>
+    <string name="kaolaText">考拉电台</string>
+    <string name="drivText">记录仪</string>
+    <string name="musicText">音乐</string>
+    <string name="fmText">FM</string>
+    <string name="fileText">文件管理</string>
+    <string name="setText">设置</string>
+    <string name="tencentText">腾讯视频</string>
+    <string name="edogText">电子狗</string>
+    <string name="gralleryText">图库</string>
+    <string name="moreText">更多应用</string>
+    <string name="textNull">"- - -"</string>
+    <string name="textTime">"--:--"</string>
+    <string name="text_fm">FM</string>
+    <string name="androidSetting">原生设置</string>
+    <string name="operatorType4G">4G</string>
+    <string name="operatorType3G">3G</string>
+    <string name="operatorType2G">2G</string>
+    <string name="refushWeatherData">正在刷新天气，请稍后</string>
+    <string name="no_app">未安装</string>
+    <string name="norecording">未录制</string>
+    <string name="recording">录像中</string>
+    <string name="duration">"00:00:00"</string>
+    <string name="balance">余额</string>
+    <string name="texttakePhoto">抓拍</string>
+    <string name="open">打开</string>
+    <string name="close">关闭</string>
+    <string name="noOpen">未打开</string>
+    <string name="opened">已打开</string>
+    <string name="closed">已关闭</string>
+    <string name="noConnected">未连接</string>
+    <string name="connected">已连接</string>
+    <string name="videoBott">视频</string>
+    <string name="photoBott">照片</string>
+
+</resources>
